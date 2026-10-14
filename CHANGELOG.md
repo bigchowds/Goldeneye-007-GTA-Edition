@@ -2,6 +2,13 @@
 
 ## v21 Beta
 
+### Public release packaging
+
+- Added a single clean-USA-ROM xdelta patch that includes the GTA Edition changes and the existing third-person functionality.
+- Verified the reconstructed ROM byte for byte against the tested v21 output; game content is unchanged by this packaging step.
+- Added exact input, patch and output hashes, installation instructions, credits and release notes.
+- Added the ROM/archive exclusions documented by the repository.
+
 ### Cradle
 
 - Fixed old confrontation captions carrying into the helicopter escape sequence.

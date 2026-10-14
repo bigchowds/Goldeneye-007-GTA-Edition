@@ -2,6 +2,12 @@
 
 A playable **GoldenEye 007 (Nintendo 64)** campaign modification that reworks parts of the game with **Grand Theft Auto: San Andreas-inspired characters, dialogue, audio, weapons, presentation and story moments**.
 
+Created by **[BigChowds](https://www.youtube.com/@BigChowds)**, using the **[GoldenEye 007 Plus](https://github.com/Joshua-1248/GoldenEye-007-Plus)** third-person foundation by Joshua-1248. See [CREDITS.md](CREDITS.md).
+
+**[Download the v21 beta](https://github.com/bigchowds/Goldeneye-007-GTA-Edition/releases/tag/v21-beta)** · [Installation](PATCHING.md) · [Known issues](KNOWN_ISSUES.md)
+
+The playable download is a single patch for a **clean GoldenEye 007 USA / NTSC-U `.z64` ROM**. The third-person functionality and options from the development base are included; no separate third-person patch is needed.
+
 This repository documents the current **v21 beta** and contains the latest incremental source changes and validation material. The beta has been manually played through the campaign **up to Cradle**. **Aztec and Egyptian are currently untested.**
 
 > **Beta status:** playable, but not considered fully stable or complete. See [Known Issues](KNOWN_ISSUES.md) before testing.
@@ -68,27 +74,18 @@ The included v21 validation report records focused binary and emulator checks fo
 
 ## Repository Layout
 
-```text
-.
-├── README.md
-├── CHANGELOG.md
-├── KNOWN_ISSUES.md
-├── TESTING.md
-├── NOTICE.md
-├── .gitignore
-├── docs/
-│   ├── BUILD_NOTES.md
-│   └── images/
-├── src/
-│   └── incremental-v21/
-│       ├── build_scene_audio_v21.py
-│       ├── scene_missions_v21.py
-│       ├── ending_caption_v21.py
-│       ├── validate_scene_audio_v21.py
-│       └── boot-v6-research/
-└── validation/
-    └── v21_validation.json
-```
+| Path | Contents |
+| --- | --- |
+| `PATCHING.md` | Clean-ROM installation and exact file hashes |
+| `CREDITS.md`, `NOTICE.md` | Project attribution and third-party notices |
+| `CHANGELOG.md`, `KNOWN_ISSUES.md`, `TESTING.md` | Release changes, limitations and test scope |
+| `docs/BUILD_NOTES.md` | Incremental source dependencies |
+| `docs/releases/v21-beta.md` | Playable beta release notes |
+| `docs/images/` | Scene comparison image |
+| `src/incremental-v21/` | Latest scene-fix and focused runtime-validation scripts |
+| `validation/` | Scene-validation report and clean-ROM patch verification |
+
+Download the playable patch from **Releases**. GitHub's automatic **Source code** archives contain the repository snapshot rather than the playable patch.
 
 ## Source Status
 
@@ -102,7 +99,13 @@ As a result, cloning this repository alone is **not currently a one-command repr
 
 **No GoldenEye ROM is included in this repository.**
 
-The development ROM (`.z64`) is intentionally excluded from Git tracking. A future public release should be distributed as a patch that requires the user to provide the correct legally obtained base game version.
+1. Download `GoldenEye-GTA-Edition-v21-beta-release.zip` from the [v21 beta release](https://github.com/bigchowds/Goldeneye-007-GTA-Edition/releases/tag/v21-beta) and extract it.
+2. Apply `GoldenEye-GTA-Edition-v21-beta-clean-USA.xdelta` to your clean **GoldenEye 007 USA / NTSC-U `.z64`** using an xdelta-compatible patcher.
+3. Open the newly created `.z64` in your emulator. Start missions fresh; old ROM save states can retain previous scene state.
+
+**[Full installation guide and required ROM hash](PATCHING.md)**
+
+The release contains the GTA Edition changes together with the existing third-person functionality. The patch was decoded with xdelta3 and verified byte for byte against the tested v21 build. Packaging does not change gameplay or fix the known beta issues.
 
 Do not open an issue asking for a retail ROM.
 

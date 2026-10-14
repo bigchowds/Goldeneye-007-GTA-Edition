@@ -1,0 +1,29 @@
+{
+  "patch": {
+    "file": "GoldenEye-GTA-Edition-v21-beta-clean-USA.xdelta",
+    "size_bytes": 9399950,
+    "sha256": "1e7c08c72e0a6d0bd1e7b7e9a495058c0b566f15c63a962a389af69af5bade91",
+    "header_hex": "d6c3c40000"
+  },
+  "source": {
+    "size_bytes": 12582912,
+    "sha256": "2cdcec8a9f0cb6e36337f3ee39d8ad105dc8afa6ba1c02d466e8f5b771f9a162",
+    "sha1": "abe01e4aeb033b6c0836819f549c791b26cfde83",
+    "md5": "70c525880240c1e838b8b1be35666c3b"
+  },
+  "output": {
+    "size_bytes": 33554432,
+    "sha256": "f65aa6b848f3b5ca0deefcbf99d58787f5adca572a915b2b93adc9d403117613",
+    "byte_for_byte_matches_v21": true
+  },
+  "xdelta3_version": "3.2.2",
+  "encode_options": [
+    "-e",
+    "-9",
+    "-a",
+    "-S",
+    "none",
+    "-A"
+  ],
+  "format": "raw VCDIFF with no secondary compression or armor"
+}

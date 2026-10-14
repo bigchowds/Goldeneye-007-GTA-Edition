@@ -26,7 +26,7 @@ The main v21 builder also expects the exact previous v20 ROM/build report used d
 
 The aim of this public beta snapshot is to preserve and document the latest technical changes without publishing a retail game ROM or pretending that an incomplete historical source snapshot is a reproducible build.
 
-A future cleanup can consolidate the historical modules into a full source tree and create a patch-based public release workflow.
+A future cleanup can consolidate the historical modules into a full source tree. The playable beta is distributed separately as a verified clean-ROM patch; applying that release patch does not depend on rebuilding this incremental source snapshot. See [PATCHING.md](../PATCHING.md).
 
 ## Current v21 output fingerprint
 
