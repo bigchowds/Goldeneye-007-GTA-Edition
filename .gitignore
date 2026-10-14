@@ -1,0 +1,43 @@
+# Original and modified game ROMs
+*.[zZ]64
+*.[nN]64
+*.[vV]64
+*.[rR][oO][mM]
+baserom*
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local ROM/build/test working directories
+build/
+roms/
+local-roms/
+release-work/
+mod-inputs/
+
+# Packaged downloads belong in GitHub Releases
+*.zip
+*.7z
+*.rar
+*.xdelta
+*.bps
+*.ips
+
+# Emulator save states, memory dumps and local settings
+*.eep
+*.sra
+*.fla
+*.pj
+*.st[0-9]
+*.sav
+*.dmp
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
